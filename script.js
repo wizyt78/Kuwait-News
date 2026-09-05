@@ -1,36 +1,314 @@
 const WHATSAPP_NUMBER="447873346012";
+
 const countries=[
-["KW","+965","Kuwait"],["SA","+966","Saudi Arabia"],["AE","+971","United Arab Emirates"],["QA","+974","Qatar"],["BH","+973","Bahrain"],["OM","+968","Oman"],["JO","+962","Jordan"],["LB","+961","Lebanon"],["IQ","+964","Iraq"],["EG","+20","Egypt"],["DZ","+213","Algeria"],["MA","+212","Morocco"],["TN","+216","Tunisia"],["LY","+218","Libya"],["SD","+249","Sudan"],["YE","+967","Yemen"],["PS","+970","Palestine"],["SY","+963","Syria"],["MR","+222","Mauritania"],["SO","+252","Somalia"],["DJ","+253","Djibouti"],["KM","+269","Comoros"],["GB","+44","United Kingdom"],["US","+1","United States"]];
+  ["KW","+965","Kuwait"],
+  ["SA","+966","Saudi Arabia"],
+  ["AE","+971","United Arab Emirates"],
+  ["QA","+974","Qatar"],
+  ["BH","+973","Bahrain"],
+  ["OM","+968","Oman"],
+  ["JO","+962","Jordan"],
+  ["LB","+961","Lebanon"],
+  ["IQ","+964","Iraq"],
+  ["EG","+20","Egypt"],
+  ["DZ","+213","Algeria"],
+  ["MA","+212","Morocco"],
+  ["TN","+216","Tunisia"],
+  ["LY","+218","Libya"],
+  ["SD","+249","Sudan"],
+  ["YE","+967","Yemen"],
+  ["PS","+970","Palestine"],
+  ["SY","+963","Syria"],
+  ["MR","+222","Mauritania"],
+  ["SO","+252","Somalia"],
+  ["DJ","+253","Djibouti"],
+  ["KM","+269","Comoros"],
+  ["GB","+44","United Kingdom"],
+  ["US","+1","United States"]
+];
+
 const T={
-en:{navNews:"KUWAIT NEWS",navEconomy:"ECONOMY",live:"LIVE",special:"SPECIAL REPORT",breaking:"BREAKING NEWS",kicker:"SPECIAL REPORT • DIGITAL ECONOMY",headline:"A New Digital Initiative Is Reshaping the Future of Modern Services",byline:"By Financial Desk",updated:"Updated 12 mins ago",city:"Kuwait City",caption:"Feature image",urgent:"Important update for readers:",p1:"A new digital-services initiative is being presented as part of a broader effort to make modern technology more accessible, efficient and transparent.",p2:"The initiative focuses on digital infrastructure, artificial intelligence and customer support, with an emphasis on responsible participation and clear information.",p3:"Visitors who want more information can contact the support team using the form below.",eyebrow:"GET IN TOUCH",formTitle:"Request More Information",formSub:"Complete the form and continue directly to WhatsApp.",manager:"Support Manager Online",managerSub:"Start your information request today",online:"ONLINE",first:"First Name",last:"Last Name",phone:"Phone Number",email:"Email Address",consent:"I agree to be contacted about the information I requested.",button:"CONTINUE ON WHATSAPP",buttonSub:"Open a direct WhatsApp conversation",comments:"LATEST COMMENTS",comment1Name:"Ahmad K.",comment2Name:"Mariam H.",mins14:"14 mins ago",mins22:"22 mins ago",c1:"“The information was clear and the support team answered my questions.”",c2:"“I contacted the support team to understand the information before making any decision.”",footer:"All rights reserved.",chooseHero:"Choose report image",replacePhoto:"Replace photo"},
-ar:{navNews:"أخبار الكويت",navEconomy:"اقتصاد",live:"مباشر",special:"تقرير خاص",breaking:"خبر عاجل",kicker:"تقرير خاص • الاقتصاد الرقمي",headline:"مبادرة رقمية جديدة تعيد تشكيل مستقبل الخدمات الحديثة",byline:"إعداد فريق الشؤون المالية",updated:"تم التحديث منذ 12 دقيقة",city:"مدينة الكويت",caption:"الصورة الرئيسية",urgent:"تحديث مهم للقراء:",p1:"يتم تقديم مبادرة جديدة للخدمات الرقمية ضمن جهود أوسع لجعل التكنولوجيا الحديثة أكثر سهولة وكفاءة وشفافية.",p2:"تركز المبادرة على البنية التحتية الرقمية والذكاء الاصطناعي ودعم العملاء، مع التأكيد على المشاركة المسؤولة وتوفير المعلومات الواضحة.",p3:"يمكن للزوار الراغبين في معرفة المزيد التواصل مع فريق الدعم باستخدام النموذج أدناه.",eyebrow:"تواصل معنا",formTitle:"طلب مزيد من المعلومات",formSub:"أكمل النموذج وانتقل مباشرة إلى واتساب.",manager:"مدير الدعم متاح الآن",managerSub:"ابدأ طلب المعلومات اليوم",online:"متاح",first:"الاسم الأول",last:"اسم العائلة",phone:"رقم الهاتف",email:"البريد الإلكتروني",consent:"أوافق على التواصل معي بشأن المعلومات التي طلبتها.",button:"المتابعة عبر واتساب",buttonSub:"فتح محادثة مباشرة عبر واتساب",comments:"أحدث التعليقات",comment1Name:"أحمد ك.",comment2Name:"مريم هـ.",mins14:"منذ 14 دقيقة",mins22:"منذ 22 دقيقة",c1:"«كانت المعلومات واضحة وفريق الدعم أجاب عن أسئلتي.»",c2:"«تواصلت مع فريق الدعم لفهم المعلومات قبل اتخاذ أي قرار.»",footer:"جميع الحقوق محفوظة.",chooseHero:"اختر صورة التقرير",replacePhoto:"استبدال الصورة"}};
-const language=document.getElementById("language"), country=document.getElementById("country");
-countries.forEach(([iso,code,name])=>{const o=document.createElement("option");o.value=code;o.textContent=`${code} — ${name}`;if(iso==="KW")o.selected=true;country.appendChild(o)});
-function setLanguage(v){document.documentElement.lang=v;document.documentElement.dir=v==="ar"?"rtl":"ltr";document.querySelectorAll("[data-t]").forEach(el=>{const k=el.dataset.t;if(T[v][k])el.textContent=T[v][k]});}
+  en:{
+    navNews:"KUWAIT NEWS",
+    navEconomy:"ECONOMY",
+    live:"LIVE",
+    special:"SPECIAL REPORT",
+    breaking:"BREAKING NEWS",
+    kicker:"SPECIAL REPORT • DIGITAL ECONOMY",
+    headline:"A New Digital Initiative Is Reshaping the Future of Modern Services",
+    byline:"By Financial Desk",
+    updated:"Updated 12 mins ago",
+    city:"Kuwait City",
+    caption:"Feature image",
+    urgent:"Important update for readers:",
+    p1:"A new digital-services initiative is being presented as part of a broader effort to make modern technology more accessible, efficient and transparent.",
+    p2:"The initiative focuses on digital infrastructure, artificial intelligence and customer support, with an emphasis on responsible participation and clear information.",
+    p3:"Visitors who want more information can contact the support team using the form below.",
+    eyebrow:"GET IN TOUCH",
+    formTitle:"Request More Information",
+    formSub:"Complete the form and continue directly to WhatsApp.",
+    manager:"Support Manager Online",
+    managerSub:"Start your information request today",
+    online:"ONLINE",
+    first:"First Name",
+    last:"Last Name",
+    phone:"Phone Number",
+    email:"Email Address",
+    consent:"I agree to be contacted about the information I requested.",
+    button:"CONTINUE ON WHATSAPP",
+    buttonSub:"Open a direct WhatsApp conversation",
+    comments:"LATEST COMMENTS",
+    comment1Name:"Ahmad K.",
+    comment2Name:"Mariam H.",
+    mins14:"14 mins ago",
+    mins22:"22 mins ago",
+    c1:"“The information was clear and the support team answered my questions.”",
+    c2:"“I contacted the support team to understand the information before making any decision.”",
+    footer:"All rights reserved."
+  },
+
+  ar:{
+    navNews:"أخبار الكويت",
+    navEconomy:"اقتصاد",
+    live:"مباشر",
+    special:"تقرير خاص",
+    breaking:"خبر عاجل",
+    kicker:"تقرير خاص • الاقتصاد الرقمي",
+    headline:"مبادرة رقمية جديدة تعيد تشكيل مستقبل الخدمات الحديثة",
+    byline:"إعداد فريق الشؤون المالية",
+    updated:"تم التحديث منذ 12 دقيقة",
+    city:"مدينة الكويت",
+    caption:"الصورة الرئيسية",
+    urgent:"تحديث مهم للقراء:",
+    p1:"يتم تقديم مبادرة جديدة للخدمات الرقمية ضمن جهود أوسع لجعل التكنولوجيا الحديثة أكثر سهولة وكفاءة وشفافية.",
+    p2:"تركز المبادرة على البنية التحتية الرقمية والذكاء الاصطناعي ودعم العملاء، مع التأكيد على المشاركة المسؤولة وتوفير المعلومات الواضحة.",
+    p3:"يمكن للزوار الراغبين في معرفة المزيد التواصل مع فريق الدعم باستخدام النموذج أدناه.",
+    eyebrow:"تواصل معنا",
+    formTitle:"طلب مزيد من المعلومات",
+    formSub:"أكمل النموذج وانتقل مباشرة إلى واتساب.",
+    manager:"مدير الدعم متاح الآن",
+    managerSub:"ابدأ طلب المعلومات اليوم",
+    online:"متاح",
+    first:"الاسم الأول",
+    last:"اسم العائلة",
+    phone:"رقم الهاتف",
+    email:"البريد الإلكتروني",
+    consent:"أوافق على التواصل معي بشأن المعلومات التي طلبتها.",
+    button:"المتابعة عبر واتساب",
+    buttonSub:"فتح محادثة مباشرة عبر واتساب",
+    comments:"أحدث التعليقات",
+    comment1Name:"أحمد ك.",
+    comment2Name:"مريم هـ.",
+    mins14:"منذ 14 دقيقة",
+    mins22:"منذ 22 دقيقة",
+    c1:"«كانت المعلومات واضحة وفريق الدعم أجاب عن أسئلتي.»",
+    c2:"«تواصلت مع فريق الدعم لفهم المعلومات قبل اتخاذ أي قرار.»",
+    footer:"جميع الحقوق محفوظة."
+  }
+};
+
+const language=document.getElementById("language");
+const country=document.getElementById("country");
+
+const countryNames={
+  en:{
+    KW:"Kuwait",
+    SA:"Saudi Arabia",
+    AE:"United Arab Emirates",
+    QA:"Qatar",
+    BH:"Bahrain",
+    OM:"Oman",
+    JO:"Jordan",
+    LB:"Lebanon",
+    IQ:"Iraq",
+    EG:"Egypt",
+    DZ:"Algeria",
+    MA:"Morocco",
+    TN:"Tunisia",
+    LY:"Libya",
+    SD:"Sudan",
+    YE:"Yemen",
+    PS:"Palestine",
+    SY:"Syria",
+    MR:"Mauritania",
+    SO:"Somalia",
+    DJ:"Djibouti",
+    KM:"Comoros",
+    GB:"United Kingdom",
+    US:"United States"
+  },
+
+  ar:{
+    KW:"الكويت",
+    SA:"السعودية",
+    AE:"الإمارات العربية المتحدة",
+    QA:"قطر",
+    BH:"البحرين",
+    OM:"عُمان",
+    JO:"الأردن",
+    LB:"لبنان",
+    IQ:"العراق",
+    EG:"مصر",
+    DZ:"الجزائر",
+    MA:"المغرب",
+    TN:"تونس",
+    LY:"ليبيا",
+    SD:"السودان",
+    YE:"اليمن",
+    PS:"فلسطين",
+    SY:"سوريا",
+    MR:"موريتانيا",
+    SO:"الصومال",
+    DJ:"جيبوتي",
+    KM:"جزر القمر",
+    GB:"المملكة المتحدة",
+    US:"الولايات المتحدة"
+  }
+};
+
+function populateCountries(v){
+  const current=country.value || "+965";
+
+  country.innerHTML="";
+
+  countries.forEach(([iso,code])=>{
+    const o=document.createElement("option");
+
+    o.value=code;
+    o.textContent=`${code} — ${countryNames[v][iso]||iso}`;
+
+    country.appendChild(o);
+  });
+
+  country.value=[
+    ...country.options
+  ].some(o=>o.value===current)?current:"+965";
+}
+
+function setLanguage(v){
+  document.documentElement.lang=v;
+  document.documentElement.dir=v==="ar"?"rtl":"ltr";
+
+  if(language){
+    language.value=v;
+  }
+
+  document.querySelectorAll("[data-t]").forEach(el=>{
+    const k=el.dataset.t;
+
+    if(
+      T[v] &&
+      Object.prototype.hasOwnProperty.call(T[v],k)
+    ){
+      el.textContent=T[v][k];
+    }
+  });
+
+  populateCountries(v);
+}
+
 language.addEventListener("change",()=>{
-  localStorage.setItem("siteLanguage", language.value);
+  localStorage.setItem(
+    "siteLanguage",
+    language.value
+  );
+
   setLanguage(language.value);
 });
+
 const savedLanguage=localStorage.getItem("siteLanguage");
-const initialLanguage=(savedLanguage==="en"||savedLanguage==="ar")?savedLanguage:"ar";
-language.value=initialLanguage;
+
+const initialLanguage=
+  (savedLanguage==="en"||savedLanguage==="ar")
+    ?savedLanguage
+    :"ar";
+
 setLanguage(initialLanguage);
+
 document.getElementById("contactForm").addEventListener("submit",e=>{
-e.preventDefault();const v=language.value,first=document.getElementById("first").value.trim(),last=document.getElementById("last").value.trim(),phone=document.getElementById("phone").value.trim(),email=document.getElementById("email").value.trim(),consent=document.getElementById("consent").checked,status=document.getElementById("status");
-if(!first||!last||!phone||!consent){status.textContent=v==="ar"?"يرجى إكمال الحقول المطلوبة والموافقة على التواصل.":"Please complete the required fields and consent.";return}
-const digits=phone.replace(/\D/g,"");if(digits.length<6||digits.length>15){status.textContent=v==="ar"?"يرجى إدخال رقم هاتف صحيح.":"Please enter a valid phone number.";return}
-if(email&&!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){status.textContent=v==="ar"?"يرجى إدخال بريد إلكتروني صحيح.":"Please enter a valid email address.";return}
-const full=`${country.value}${digits}`.replace("+",""),msg=v==="ar"?`مرحبًا، أرغب في الحصول على مزيد من المعلومات.\n\nالاسم: ${first} ${last}\nرقم الهاتف: +${full}${email?`\nالبريد الإلكتروني: ${email}`:""}\n\nيرجى تزويدي بمزيد من المعلومات والتفاصيل.`:`Hello, I would like to receive more information.\n\nName: ${first} ${last}\nPhone: +${full}${email?`\nEmail: ${email}`:""}\n\nPlease provide more information and details.`;
-window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`,"_blank","noopener,noreferrer");
-status.textContent=v==="ar"?"تم فتح واتساب.":"WhatsApp has been opened.";
+  e.preventDefault();
+
+  const v=language.value;
+
+  const first=
+    document.getElementById("first").value.trim();
+
+  const last=
+    document.getElementById("last").value.trim();
+
+  const phone=
+    document.getElementById("phone").value.trim();
+
+  const email=
+    document.getElementById("email").value.trim();
+
+  const consent=
+    document.getElementById("consent").checked;
+
+  const status=
+    document.getElementById("status");
+
+  if(!first||!last||!phone||!consent){
+    status.textContent=
+      v==="ar"
+        ?"يرجى إكمال الحقول المطلوبة والموافقة على التواصل."
+        :"Please complete the required fields and consent.";
+
+    return;
+  }
+
+  const digits=
+    phone.replace(/\D/g,"");
+
+  if(digits.length<6||digits.length>15){
+    status.textContent=
+      v==="ar"
+        ?"يرجى إدخال رقم هاتف صحيح."
+        :"Please enter a valid phone number.";
+
+    return;
+  }
+
+  if(
+    email &&
+    !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)
+  ){
+    status.textContent=
+      v==="ar"
+        ?"يرجى إدخال بريد إلكتروني صحيح."
+        :"Please enter a valid email address.";
+
+    return;
+  }
+
+  const full=
+    `${country.value}${digits}`.replace("+","");
+
+  const msg=
+    v==="ar"
+      ?
+`مرحبًا، أرغب في الحصول على مزيد من المعلومات.
+
+الاسم: ${first} ${last}
+رقم الهاتف: +${full}${email?`\nالبريد الإلكتروني: ${email}`:""}
+
+يرجى تزويدي بمزيد من المعلومات والتفاصيل.`
+      :
+`Hello, I would like to receive more information.
+
+Name: ${first} ${last}
+Phone: +${full}${email?`\nEmail: ${email}`:""}
+
+Please provide more information and details.`;
+
+  window.open(
+    `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`,
+    "_blank",
+    "noopener,noreferrer"
+  );
+
+  status.textContent=
+    v==="ar"
+      ?"تم فتح واتساب."
+      :"WhatsApp has been opened.";
 });
-function previewImage(input, targetId){
-  const file=input.files && input.files[0];
-  if(!file || !file.type.startsWith("image/")) return;
-  const reader=new FileReader();
-  reader.onload=()=>{document.getElementById(targetId).src=reader.result;};
-  reader.readAsDataURL(file);
-}
-document.getElementById("heroPicker").addEventListener("change",e=>previewImage(e.target,"heroImage"));
-document.getElementById("commentPicker1").addEventListener("change",e=>previewImage(e.target,"commentImage1"));
-document.getElementById("commentPicker2").addEventListener("change",e=>previewImage(e.target,"commentImage2"));
