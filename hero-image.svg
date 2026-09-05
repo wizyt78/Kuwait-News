@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 720">
+<defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#061a37"/><stop offset="1" stop-color="#123f72"/></linearGradient></defs>
+<rect width="1400" height="720" fill="url(#g)"/>
+<circle cx="1140" cy="120" r="260" fill="#1e7cf2" opacity=".16"/><circle cx="200" cy="650" r="300" fill="#0c9b3e" opacity=".12"/>
+<path d="M0 590 C280 520 450 600 700 540 S1120 490 1400 560 V720 H0Z" fill="#fff" opacity=".08"/>
+<g fill="none" stroke="#5ca3ff" stroke-width="3" opacity=".65"><path d="M130 180L370 100L600 210L850 110L1110 220L1270 130"/><path d="M250 420L500 300L760 430L1020 300L1190 410"/></g>
+<g fill="#fff"><circle cx="130" cy="180" r="9"/><circle cx="370" cy="100" r="9"/><circle cx="600" cy="210" r="9"/><circle cx="850" cy="110" r="9"/><circle cx="1110" cy="220" r="9"/><circle cx="1270" cy="130" r="9"/><circle cx="250" cy="420" r="9"/><circle cx="500" cy="300" r="9"/><circle cx="760" cy="430" r="9"/><circle cx="1020" cy="300" r="9"/><circle cx="1190" cy="410" r="9"/></g>
+<text x="700" y="310" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="58" font-weight="800">KUWAIT DIGITAL</text>
+<text x="700" y="375" text-anchor="middle" fill="#b9dcff" font-family="Arial,sans-serif" font-size="30">FICTIONAL SPECIAL REPORT</text>
+<text x="700" y="445" text-anchor="middle" fill="#fff" opacity=".8" font-family="Arial,sans-serif" font-size="22">Illustration • No real persons depicted</text>
+</svg>
