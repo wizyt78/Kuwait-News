@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>AL QABAS DIGITAL</title>
+<meta name="description" content="Digital news and information">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="top-inner">
+    <button class="menu" type="button" aria-label="Menu">☰</button>
+    <a class="brand" href="#" aria-label="AL QABAS DIGITAL">AL QABAS <span>DIGITAL</span></a>
+    <nav class="nav">
+      <a href="#report" data-i18n="navNews"></a>
+      <a href="#service" data-i18n="navEconomy"></a>
+      <span class="live"><i></i><span data-i18n="live"></span></span>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section class="utility">
+  <div class="breaking">
+    <span class="pill" data-i18n="special"></span>
+    <span class="red-dot">●</span>
+    <span data-i18n="breaking"></span>
+  </div>
+  <label class="lang" aria-label="Language">
+    <span>🌐</span>
+    <select id="language">
+      <option value="ar">العربية</option>
+      <option value="en">English</option>
+    </select>
+  </label>
+</section>
+
+<article id="report" class="paper">
+  <div class="kicker" data-i18n="kicker"></div>
+  <h1 data-i18n="headline"></h1>
+  <div class="meta">
+    <span data-i18n="byline"></span><b>•</b><span data-i18n="updated"></span><b>•</b><span data-i18n="city"></span>
+  </div>
+
+  <figure class="hero">
+    <img id="heroImage" src="assets/hero-image.jpg" alt="" data-i18n-alt="heroAlt">
+    <figcaption data-i18n="caption"></figcaption>
+    <label class="media-button"><input id="heroUpload" type="file" accept="image/*"> <span data-i18n="replaceHero"></span></label>
+  </figure>
+
+  <section class="story">
+    <p class="lead">🚨 <strong data-i18n="urgent"></strong></p>
+    <p data-i18n="p1"></p>
+    <p data-i18n="p2"></p>
+    <p data-i18n="p3"></p>
+  </section>
+
+  <section id="service" class="registration">
+    <div class="reg-top">
+      <div>
+        <span class="eyebrow" data-i18n="eyebrow"></span>
+        <h2 data-i18n="formTitle"></h2>
+        <p class="sub" data-i18n="formSub"></p>
+      </div>
+      <div class="verified">✓</div>
+    </div>
+
+    <div class="manager">
+      <span class="online-dot"></span>
+      <div>
+        <strong data-i18n="manager"></strong>
+        <small data-i18n="managerSub"></small>
+      </div>
+      <span class="status-label" data-i18n="online"></span>
+    </div>
+
+    <form id="contactForm" novalidate>
+      <div class="fields">
+        <label><span data-i18n="first"></span><input id="first" required autocomplete="given-name"></label>
+        <label><span data-i18n="last"></span><input id="last" required autocomplete="family-name"></label>
+        <label class="phone-field">
+          <span data-i18n="phone"></span>
+          <div class="phone-row"><select id="country" aria-label="Country code"></select><input id="phone" required inputmode="tel" autocomplete="tel"></div>
+        </label>
+        <label><span data-i18n="email"></span><input id="email" type="email" autocomplete="email"></label>
+      </div>
+      <label class="consent"><input id="consent" type="checkbox" required><span data-i18n="consent"></span></label>
+      <button class="whatsapp" type="submit">◉ <span data-i18n="button"></span><small data-i18n="buttonSub"></small></button>
+      <p id="status" class="status" role="status"></p>
+    </form>
+  </section>
+
+  <section class="comments">
+    <div class="comments-head"><h3 data-i18n="comments"></h3></div>
+    <div class="comment">
+      <img id="commentImage1" src="assets/comments/comment-1.jpg" alt="">
+      <div><strong data-i18n="comment1Name"></strong><span class="time" data-i18n="mins14"></span><p data-i18n="c1"></p>
+      <label class="media-button small"><input id="commentUpload1" type="file" accept="image/*"><span data-i18n="replacePhoto"></span></label></div>
+    </div>
+    <div class="comment">
+      <img id="commentImage2" src="assets/comments/comment-2.jpg" alt="">
+      <div><strong data-i18n="comment2Name"></strong><span class="time" data-i18n="mins22"></span><p data-i18n="c2"></p>
+      <label class="media-button small"><input id="commentUpload2" type="file" accept="image/*"><span data-i18n="replacePhoto"></span></label></div>
+    </div>
+  </section>
+</article>
+</main>
+<footer>© 2026 AL QABAS DIGITAL • <span data-i18n="footer"></span></footer>
+<script src="script.js"></script>
+</body>
+</html>
