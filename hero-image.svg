@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 820">
+<defs><linearGradient id="a" x1="0" x2="1"><stop stop-color="#071a36"/><stop offset="1" stop-color="#154a80"/></linearGradient><linearGradient id="b" x1="0" x2="1"><stop stop-color="#22a45a"/><stop offset="1" stop-color="#2c82f0"/></linearGradient></defs>
+<rect width="1600" height="820" fill="url(#a)"/><circle cx="1270" cy="150" r="320" fill="#2d8af2" opacity=".12"/><circle cx="250" cy="700" r="330" fill="#21a55a" opacity=".10"/>
+<g fill="none" stroke="#71b5ff" stroke-width="3" opacity=".55"><path d="M90 190L350 80L620 230L880 110L1160 260L1430 120"/><path d="M190 500L460 330L760 500L1030 330L1350 510"/><path d="M620 230L760 500M880 110L1030 330"/></g>
+<g fill="#fff"><circle cx="90" cy="190" r="10"/><circle cx="350" cy="80" r="10"/><circle cx="620" cy="230" r="10"/><circle cx="880" cy="110" r="10"/><circle cx="1160" cy="260" r="10"/><circle cx="1430" cy="120" r="10"/><circle cx="190" cy="500" r="10"/><circle cx="460" cy="330" r="10"/><circle cx="760" cy="500" r="10"/><circle cx="1030" cy="330" r="10"/><circle cx="1350" cy="510" r="10"/></g>
+<rect x="410" y="275" width="780" height="280" rx="32" fill="#fff" opacity=".07" stroke="#fff" stroke-opacity=".18"/>
+<text x="800" y="390" text-anchor="middle" fill="#fff" font-family="Arial,sans-serif" font-size="64" font-weight="900">DIGITAL TRANSFORMATION</text>
+<text x="800" y="455" text-anchor="middle" fill="#b9ddff" font-family="Arial,sans-serif" font-size="31">SPECIAL REPORT</text>
+<text x="800" y="505" text-anchor="middle" fill="#fff" opacity=".75" font-family="Arial,sans-serif" font-size="20">Replace this artwork with your own licensed feature image</text>
+</svg>

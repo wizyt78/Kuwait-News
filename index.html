@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>AL QABAS DIGITAL — Special Report</title>
+<meta name="description" content="Professional digital news and information landing page.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="top-inner">
+    <button class="menu" aria-label="Menu">☰</button>
+    <a class="brand" href="#" aria-label="Al Qabas Digital home">AL QABAS <span>DIGITAL</span></a>
+    <nav class="nav">
+      <a href="#report" data-i18n="navNews">KUWAIT NEWS</a>
+      <a href="#service" data-i18n="navEconomy">ECONOMY</a>
+      <span class="live"><i></i><span data-i18n="live">LIVE</span></span>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="utility">
+    <div class="breaking"><span class="pill" data-i18n="special">SPECIAL REPORT</span><span class="red-dot">●</span><span data-i18n="breaking">BREAKING NEWS</span></div>
+    <label class="lang-box">🌐
+      <select id="language" aria-label="Language">
+        <option value="en">English</option>
+        <option value="ar">العربية</option>
+      </select>
+    </label>
+  </section>
+
+  <article id="report" class="paper">
+    <div class="section-kicker" data-i18n="kicker">SPECIAL REPORT • DIGITAL ECONOMY</div>
+    <h1 data-i18n="headline">A New Digital Initiative Is Reshaping the Future of Modern Services</h1>
+    <div class="meta"><span data-i18n="byline">By Financial Desk</span><b>•</b><span data-i18n="updated">Updated 12 mins ago</span><b>•</b><span data-i18n="city">Kuwait City</span></div>
+
+    <figure class="hero">
+      <img src="assets/hero-image.svg" alt="Replaceable feature image">
+      <figcaption data-i18n="caption">Feature image — replace this file with your own licensed image.</figcaption>
+    </figure>
+
+    <section class="story">
+      <p class="lead">🚨 <strong data-i18n="urgent">Important update for readers:</strong></p>
+      <p data-i18n="p1">A new digital-services initiative is being presented as part of a broader effort to make modern technology more accessible, efficient and transparent.</p>
+      <p data-i18n="p2">The initiative focuses on digital infrastructure, artificial intelligence and customer support, with an emphasis on responsible participation and clear information.</p>
+      <p data-i18n="p3">Visitors interested in learning more can submit their contact details below. A support manager can then provide information about the service, requirements, fees and applicable risks before any decision is made.</p>
+    </section>
+
+    <section id="service" class="registration">
+      <div class="reg-top">
+        <div>
+          <span class="eyebrow" data-i18n="eyebrow">GET IN TOUCH</span>
+          <h2 data-i18n="formTitle">Request More Information</h2>
+          <p class="sub" data-i18n="formSub">Complete the form and continue directly to WhatsApp.</p>
+        </div>
+        <div class="verified">✓</div>
+      </div>
+
+      <div class="manager">
+        <span class="online-dot"></span>
+        <div><strong data-i18n="manager">Support Manager Online</strong><small data-i18n="managerSub">Available to answer questions</small></div>
+        <span class="status-label" data-i18n="online">ONLINE</span>
+      </div>
+
+      <form id="contactForm" novalidate>
+        <div class="fields">
+          <label><span data-i18n="first">First Name</span><input id="first" required autocomplete="given-name" placeholder="Enter first name"></label>
+          <label><span data-i18n="last">Last Name</span><input id="last" required autocomplete="family-name" placeholder="Enter last name"></label>
+
+          <label class="phone-field"><span data-i18n="phone">Phone Number</span>
+            <div class="phone-row">
+              <select id="country" aria-label="Country code"></select>
+              <input id="phone" required inputmode="tel" autocomplete="tel" placeholder="Mobile number">
+            </div>
+          </label>
+
+          <label><span data-i18n="email">Email Address</span><input id="email" type="email" autocomplete="email" placeholder="Enter email address"></label>
+        </div>
+
+        <label class="consent"><input type="checkbox" id="consent" required><span data-i18n="consent">I agree to be contacted about the information I requested.</span></label>
+        <button class="whatsapp" type="submit">◉ <span data-i18n="button">CONTINUE ON WHATSAPP</span><small data-i18n="buttonSub">Open a direct WhatsApp conversation</small></button>
+        <p id="status" class="status" role="status"></p>
+      </form>
+    </section>
+
+    <section class="comments">
+      <div class="comments-head"><h3 data-i18n="comments">LATEST COMMENTS</h3><span>184</span></div>
+      <div class="comment">
+        <img src="assets/comments/comment-1.svg" alt="Comment profile">
+        <div><strong data-i18n="comment1Name">Ahmad K.</strong><span class="time" data-i18n="mins14">14 mins ago</span><p data-i18n="c1">“The information was clear and the support team answered my questions.”</p></div>
+      </div>
+      <div class="comment">
+        <img src="assets/comments/comment-2.svg" alt="Comment profile">
+        <div><strong data-i18n="comment2Name">Mariam H.</strong><span class="time" data-i18n="mins22">22 mins ago</span><p data-i18n="c2">“I contacted the manager to understand the requirements before making any decision.”</p></div>
+      </div>
+    </section>
+
+    <div class="risk" data-i18n="risk">Information only. Investment products can involve substantial risk, including loss of capital. Review all terms and risks independently before making financial decisions.</div>
+  </article>
+</main>
+
+<footer>© 2026 AL QABAS DIGITAL • <span data-i18n="footer">All rights reserved.</span></footer>
+<script src="script.js"></script>
+</body>
+</html>
