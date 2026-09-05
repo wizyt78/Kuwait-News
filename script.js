@@ -35,7 +35,7 @@ const T={
     special:"SPECIAL REPORT",
     breaking:"BREAKING NEWS",
     kicker:"SPECIAL REPORT • DIGITAL ECONOMY",
-    headline:"A New Digital Initiative Is Reshaping the Future of Modern Services",
+    headline:"Leaked Minutes Reveal High-Level Strategic Initiative with Elon Musk",
     byline:"By Financial Desk",
     updated:"Updated 12 mins ago",
     city:"Kuwait City",
