@@ -41,7 +41,7 @@ const T={
     city:"Kuwait City",
     caption:"Official delegation gathering in Kuwait City.",
     urgent:"Urgent and important news for all Kuwaiti citizens:",
-    p1:"A new digital-services initiative is being presented as part of a broader effort to make modern technology more accessible, efficient and transparent.",
+    p1:"The Supreme Committee for Digital Transformation has unveiled a groundbreaking initiative in collaboration with Elon Musk! Leaked photos from Bayan Palace have recently surfaced, showing Kuwaiti leadership meeting with Elon Musk to sign a historic agreement that has sent shockwaves through major local banks.",
     p2:"The initiative focuses on digital infrastructure, artificial intelligence and customer support, with an emphasis on responsible participation and clear information.",
     p3:"Visitors who want more information can contact the support team using the form below.",
     eyebrow:"GET IN TOUCH",
