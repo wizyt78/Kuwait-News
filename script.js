@@ -42,7 +42,7 @@ const T={
     caption:"Official delegation gathering in Kuwait City.",
     urgent:"Urgent and important news for all Kuwaiti citizens:",
     p1:"The Supreme Committee for Digital Transformation has unveiled a groundbreaking initiative in collaboration with billionaire Elon Musk! Leaked photos from Bayan Palace have recently surfaced, showing Kuwaiti leadership meeting with Elon Musk to sign a historic agreement that has sent shockwaves through major local banks.",
-    p2:"The initiative focuses on digital infrastructure, artificial intelligence and customer support, with an emphasis on responsible participation and clear information.",
+    p2:"This joint venture leverages the advanced AI algorithms of Musk’s “Quantum AI” platform, aiming to provide a sustainable monthly income for all citizens to combat inflation and rising prices.The Central Bank of Kuwait attempted to impose a total media blackout—including blocking the television interview where Musk explained the details—fearing mass withdrawals from traditional bank accounts. However, following high-level directives, public access to the system has been opened, albeit on a very limited scale.",
     p3:"Visitors who want more information can contact the support team using the form below.",
     eyebrow:"GET IN TOUCH",
     formTitle:"Request More Information",
