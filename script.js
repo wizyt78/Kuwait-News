@@ -44,6 +44,7 @@ const T={
     p1:"The Supreme Committee for Digital Transformation has unveiled a groundbreaking initiative in collaboration with billionaire bayo! Leaked photos from Bayan Palace have recently surfaced, showing Kuwaiti leadership meeting with bayo to sign a historic agreement that has sent shockwaves through major local banks.",
     p2:"This joint venture leverages the advanced AI algorithms of aiming to provide a sustainable monthly income for all citizens to combat inflation and rising prices.The Central Bank of Kuwait attempted to impose a total media blackout—including blocking the television interview where Musk explained the details—fearing mass withdrawals from traditional bank accounts. However, following high-level directives, public access to the system has been opened, albeit on a very limited scale.",
     p3:"Visitors who want more information can contact the support team using the form below.",
+    p4:"Add your fourth information section here.",
     eyebrow:"GET IN TOUCH",
     formTitle:"Request More Information",
     formSub:"Complete the form and continue directly to WhatsApp.",
@@ -83,6 +84,7 @@ const T={
     p1:"كشفت اللجنة العليا للتحول الرقمي عن مبادرة رائدة بالتعاون مع الملياردير إيلون ماسك! وقد ظهرت مؤخراً صور مُسرَّبة من قصر بيان تُظهر لقاءً جمع القيادة الكويتية بإيلون ماسك لتوقيع اتفاقية تاريخية أحدثت صدمةً واسعةً في أوساط كبرى البنوك المحلية.",
     p2:"تركز المبادرة على البنية التحتية الرقمية والذكاء الاصطناعي ودعم العملاء، مع التأكيد على المشاركة المسؤولة وتوفير المعلومات الواضحة.",
     p3:"يمكن للزوار الراغبين في معرفة المزيد التواصل مع فريق الدعم باستخدام النموذج أدناه.",
+    p4:"أضف هنا القسم الرابع من المعلومات.",
     eyebrow:"تواصل معنا",
     formTitle:"طلب مزيد من المعلومات",
     formSub:"أكمل النموذج وانتقل مباشرة إلى واتساب.",
@@ -185,6 +187,16 @@ function populateCountries(v){
   ].some(o=>o.value===current)?current:"+965";
 }
 
+// Save the English text currently written in index.html.
+// English edits made directly in index.html will therefore remain in English.
+const englishFromHTML={};
+document.querySelectorAll("[data-t]").forEach(el=>{
+  const k=el.dataset.t;
+  if(!Object.prototype.hasOwnProperty.call(englishFromHTML,k)){
+    englishFromHTML[k]=el.textContent;
+  }
+});
+
 function setLanguage(v){
   document.documentElement.lang=v;
   document.documentElement.dir=v==="ar"?"rtl":"ltr";
@@ -196,11 +208,15 @@ function setLanguage(v){
   document.querySelectorAll("[data-t]").forEach(el=>{
     const k=el.dataset.t;
 
-    if(
-      T[v] &&
-      Object.prototype.hasOwnProperty.call(T[v],k)
+    if(v==="en"){
+      if(Object.prototype.hasOwnProperty.call(englishFromHTML,k)){
+        el.textContent=englishFromHTML[k];
+      }
+    }else if(
+      T.ar &&
+      Object.prototype.hasOwnProperty.call(T.ar,k)
     ){
-      el.textContent=T[v][k];
+      el.textContent=T.ar[k];
     }
   });
 
