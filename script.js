@@ -63,8 +63,8 @@ const T={
     comment2Name:"Mariam H.",
     mins14:"14 mins ago",
     mins22:"22 mins ago",
-    c1:"“The information was clear and the support team answered my questions.”",
-    c2:"“I contacted the support team to understand the information before making any decision.”",
+    c1:""I started with just 50 KWD and I'm literally earning thousands weekly now! My manager on WhatsApp guided me through the setup in minutes."",
+    c2:""I was skeptical about earning thousands weekly automatically, but my payout came through directly to my account."",
     footer:"All rights reserved."
   },
 
@@ -103,8 +103,8 @@ const T={
     comment2Name:"مريم هـ.",
     mins14:"منذ 14 دقيقة",
     mins22:"منذ 22 دقيقة",
-    c1:"«كانت المعلومات واضحة وفريق الدعم أجاب عن أسئلتي.»",
-    c2:"«تواصلت مع فريق الدعم لفهم المعلومات قبل اتخاذ أي قرار.»",
+    c1:""بدأت بمبلغ 50 ديناراً كويتياً فقط، والآن أجني حرفياً آلافاً كل أسبوع! لقد ساعدني مدير حسابي عبر واتساب في إتمام عملية الإعداد خلال دقائق."",
+    c2:""كنت متشككاً بشأن كسب آلاف الدولارات أسبوعياً وبشكل آلي، لكن المبلغ وصل مباشرةً إلى حسابي."",
     footer:"جميع الحقوق محفوظة."
   }
 };
