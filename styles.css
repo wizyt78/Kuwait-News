@@ -60,3 +60,10 @@ h1{font-size:32px;letter-spacing:-.7px}
   #commentName,#commentText{flex:1 1 100%;width:100%}
   .comment-send{padding:9px 16px}
 }
+
+/* Requested header navigation colors only */
+.top-inner nav a:nth-child(1){color:#2b86f2}
+.top-inner nav a:nth-child(2){color:#8b5cf6}
+
+/* Comment confirmation only */
+.comment-status{padding:8px 10px;border:1px solid #cfe7d8;border-radius:8px;background:#f4fbf6}
