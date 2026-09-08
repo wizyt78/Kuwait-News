@@ -159,6 +159,53 @@ const T={
     mins22:"منذ 22 دقيقة",
     c1:"\"بدأت بمبلغ 50 ديناراً كويتياً فقط، والآن أجني حرفياً آلافاً كل أسبوع! لقد ساعدني مدير حسابي عبر واتساب في إتمام عملية الإعداد خلال دقائق.\"",
     c2:"\"كنت متشككاً بشأن كسب آلاف الدولارات أسبوعياً وبشكل آلي، لكن المبلغ وصل مباشرةً إلى حسابي.\"",
+    comment3Name:"خالد س.",
+    comment4Name:"دانا ك.",
+    comment5Name:"يوسف ح.",
+    comment6Name:"آمنة ر.",
+    comment7Name:"فهد ب.",
+    comment8Name:"ليلى أ.",
+    comment9Name:"مبارك آل-",
+    comment10Name:"ريم ت.",
+    comment11Name:"عبدالرحمن ف.",
+    comment12Name:"سارة ز.",
+    comment13Name:"زيد ق.",
+    mins3:"منذ 34 دقيقة",
+    mins4:"منذ 41 دقيقة",
+    mins5:"منذ 49 دقيقة",
+    mins6:"منذ ساعة",
+    mins7:"منذ ساعة",
+    mins8:"منذ ساعتين",
+    mins9:"منذ ساعتين",
+    mins10:"منذ 3 ساعات",
+    mins11:"منذ 3 ساعات",
+    mins12:"منذ 4 ساعات",
+    mins13:"منذ 5 ساعات",
+    c3:""أوصي به بشدة لأي شخص يمر بظروف صعبة الآن. يستغرق إعداد التداول الآلي أقل من 5 دقائق."",
+    c4:""كنت أنا وزوجي متشككين أيضاً. بدأنا أمس ورصيدنا ارتفع بالفعل بمقدار 850 ديناراً كويتياً."",
+    c5:""أخيراً نظام يعمل فعلاً في الكويت. تأكد من مراسلتهم على واتساب قبل إغلاق التسجيل."",
+    c6:""أؤكد أن الدفعات حقيقية. وصلتني مباشرة إلى حسابي البنكي المحلي هذا الصباح دون أي رسوم مخفية."",
+    c7:""تركت وظيفتي في مجال البيع بالتجزئة الأسبوع الماضي بفضل هذا النظام. العوائد الأسبوعية تتم بالكامل دون تدخل."",
+    c8:""تحية لمدير الحساب على واتساب! ساعدني في ضبط الإعدادات بشكل مثالي."",
+    c9:""لا تضيع وقتك في التفكير في الأمر. الفرص مثل هذه لا تبقى متاحة طويلاً. خدمة 10/10."",
+    c10:""جربت العديد من المنصات عبر الإنترنت وخسرت المال، لكن هذا النظام الذي ظهر على القبس هو النظام الحقيقي."",
+    c11:""تلقيت للتو دفعة الأرباح الأسبوعية الثانية بقيمة 2,400 دينار كويتي. أفضل قرار مالي اتخذته هذا العام."",
+    c12:""هل يرى أي شخص آخر هذه العوائد الضخمة؟ رصيد حسابي ينمو كل ساعة."",
+    c13:""كنت مفلساً تماماً الشهر الماضي. شكراً جزيلاً لمنشئي هذا البرنامج الرائع!"",
+    seeMore:"عرض المزيد",
+    seeLess:"عرض أقل",
+    comment14Name:"نور م.",
+    comment15Name:"عمر م.",
+    mins14b:"منذ 6 ساعات",
+    mins15:"منذ 7 ساعات",
+    c14:""شكراً لكم على الدعم السريع والإرشادات الواضحة. كانت التجربة سهلة ومباشرة جداً."",
+    c15:""فريق الدعم أجاب عن أسئلتي وساعدني على فهم الخطوات بوضوح."",
+    commentFormTitle:"أضف تعليقاً",
+    commentFormSub:"أرسل ملاحظاتك للمراجعة. لن يظهر تعليقك للعامة حتى تتم الموافقة عليه.",
+    commentNamePlaceholder:"اسمك",
+    commentTextPlaceholder:"اكتب تعليقك",
+    commentSend:"إرسال",
+    commentSent:"تم إرسال التعليق بنجاح."
     footer:"جميع الحقوق محفوظة."
   }
 };
@@ -265,6 +312,8 @@ function setLanguage(v){
     if(v==="en"){
       if(Object.prototype.hasOwnProperty.call(englishFromHTML,k)){
         el.textContent=englishFromHTML[k];
+      }else if(Object.prototype.hasOwnProperty.call(T.en,k)){
+        el.textContent=T.en[k];
       }
     }else if(
       T.ar &&
@@ -273,6 +322,20 @@ function setLanguage(v){
       el.textContent=T.ar[k];
     }
   });
+
+  document.querySelectorAll("[data-t-placeholder]").forEach(el=>{
+    const k=el.dataset.tPlaceholder;
+    if(v==="en"){
+      el.placeholder=T.en[k]||el.placeholder;
+    }else if(T.ar && Object.prototype.hasOwnProperty.call(T.ar,k)){
+      el.placeholder=T.ar[k];
+    }
+  });
+
+  if(typeof seeMoreComments!=="undefined" && seeMoreComments){
+    const expanded=seeMoreComments.classList.contains("expanded");
+    seeMoreComments.textContent=expanded?(T[v].seeLess||"See Less"):(T[v].seeMore||"See More");
+  }
 
   populateCountries(v);
 }
