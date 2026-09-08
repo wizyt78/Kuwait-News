@@ -100,6 +100,18 @@ const T={
     c13:"\"I was completely broke last month. Thank you so much to the creators of this incredible software!\"",
     seeMore:"See More",
     seeLess:"See Less",
+    comment14Name:"Noor M.",
+    comment15Name:"Omar M.",
+    mins14b:"6 hrs ago",
+    mins15:"7 hrs ago",
+    c14:"\"Thank you for the quick support and clear guidance. The experience was very straightforward.\"",
+    c15:"\"The support team answered my questions and helped me understand the steps clearly.\"",
+    commentFormTitle:"Leave a comment",
+    commentFormSub:"Send your feedback for review. It will not appear publicly until approved.",
+    commentNamePlaceholder:"Your name",
+    commentTextPlaceholder:"Write your comment",
+    commentSend:"Send",
+    commentSent:"Message sent",
     footer:"All rights reserved."
   },
 
@@ -175,6 +187,18 @@ const T={
     c13:"\"كنت مفلساً تماماً الشهر الماضي. شكراً جزيلاً لمنشئي هذا البرنامج الرائع!\"",
     seeMore:"عرض المزيد",
     seeLess:"عرض أقل",
+    comment14Name:"نور م.",
+    comment15Name:"عمر م.",
+    mins14b:"منذ 6 ساعات",
+    mins15:"منذ 7 ساعات",
+    c14:"\"شكراً لكم على الدعم السريع والإرشادات الواضحة. كانت التجربة سهلة ومباشرة جداً.\"",
+    c15:"\"فريق الدعم أجاب عن أسئلتي وساعدني على فهم الخطوات بوضوح.\"",
+    commentFormTitle:"أضف تعليقاً",
+    commentFormSub:"أرسل ملاحظاتك للمراجعة. لن يظهر تعليقك للعامة حتى تتم الموافقة عليه.",
+    commentNamePlaceholder:"اسمك",
+    commentTextPlaceholder:"اكتب تعليقك",
+    commentSend:"إرسال",
+    commentSent:"تم إرسال الرسالة",
     footer:"جميع الحقوق محفوظة."
   }
 };
@@ -315,6 +339,25 @@ const initialLanguage=
 
 setLanguage(initialLanguage);
 
+const commentForm=document.getElementById("commentForm");
+if(commentForm){
+  commentForm.addEventListener("submit",e=>{
+    e.preventDefault();
+    const v=language.value;
+    const name=document.getElementById("commentName");
+    const text=document.getElementById("commentText");
+    const status=document.getElementById("commentStatus");
+    if(!name.value.trim() || !text.value.trim()){
+      status.textContent=v==="ar"?"يرجى كتابة الاسم والتعليق.":"Please enter your name and comment.";
+      return;
+    }
+    // Intentionally do not append or publish the submitted comment.
+    status.textContent=T[v].commentSent||"Message sent";
+    name.value="";
+    text.value="";
+  });
+}
+
 const seeMoreComments=document.getElementById("seeMoreComments");
 if(seeMoreComments){
   seeMoreComments.addEventListener("click",()=>{
@@ -325,7 +368,7 @@ if(seeMoreComments){
     const v=language.value;
     seeMoreComments.textContent=expanded?(T[v].seeLess||"See Less"):(T[v].seeMore||"See More");
   });
-  document.querySelectorAll(".extra-comment").forEach(el=>{el.hidden=true;});
+  document.querySelectorAll(".extra-comment").forEach((el,i)=>{el.hidden=i>=5;});
 }
 
 document.getElementById("contactForm").addEventListener("submit",e=>{
