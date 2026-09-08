@@ -352,7 +352,7 @@ if(commentForm){
       return;
     }
     // Intentionally do not append or publish the submitted comment.
-    status.textContent=T[v].commentSent||"Message sent";
+    status.textContent=v==="ar"?"تم إرسال الرسالة بنجاح.":"Message sent successfully.";
     name.value="";
     text.value="";
   });
