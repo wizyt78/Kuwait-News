@@ -61,3 +61,11 @@ h1{font-size:32px;letter-spacing:-.7px}
   #commentName,#commentText{flex:1 1 100%;width:100%}
   .comment-send{padding:9px 16px}
 }
+
+/* Requested header color restoration only */
+.topbar nav a:first-child{color:#2b86f2}
+.topbar nav a:nth-child(2){color:#8a3fb8}
+
+/* Requested comment confirmation card only */
+.comment-status{display:none;flex-basis:100%;margin:8px 0 0;padding:9px 12px;border:1px solid #cfe8d8;border-radius:8px;background:#f4fbf6;color:#168243;font-size:13px;font-weight:750;min-height:0;text-align:center}
+.comment-status:not(:empty){display:block}
