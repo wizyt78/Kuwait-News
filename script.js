@@ -65,6 +65,41 @@ const T={
     mins22:"22 mins ago",
     c1:"\"I started with just 50 KWD and I'm literally earning thousands weekly now! My manager on WhatsApp guided me through the setup in minutes.\"",
     c2:"\"I was skeptical about earning thousands weekly automatically, but my payout came through directly to my account.\"",
+    comment3Name:"Khaled S.",
+    comment4Name:"Dana K.",
+    comment5Name:"Yousef H.",
+    comment6Name:"Amna R.",
+    comment7Name:"Fahad B.",
+    comment8Name:"Laila O.",
+    comment9Name:"Mubarak AL-",
+    comment10Name:"Reem T.",
+    comment11Name:"Abdulrahman F.",
+    comment12Name:"Sara Z.",
+    comment13Name:"Zaid Q.",
+    mins3:"34 mins ago",
+    mins4:"41 mins ago",
+    mins5:"49 mins ago",
+    mins6:"1 hr ago",
+    mins7:"1 hr ago",
+    mins8:"2 hrs ago",
+    mins9:"2 hrs ago",
+    mins10:"3 hrs ago",
+    mins11:"3 hrs ago",
+    mins12:"4 hrs ago",
+    mins13:"5 hrs ago",
+    c3:"\"Highly recommend this to anyone struggling right now. It takes less than 5 minutes to set up the automatic trading.\"",
+    c4:"\"My husband and I were both skeptical. We started yesterday and our balance is already up by 850 KWD.\"",
+    c5:"\"Finally a system that actually works in Kuwait. Make sure to message them on WhatsApp before the registration closes.\"",
+    c6:"\"Can confirm the payouts are real. Received mine directly to my local bank account this morning without any hidden fees.\"",
+    c7:"\"I quit my retail job last week thanks to this system. The weekly returns are completely hands-free.\"",
+    c8:"\"Shoutout to the account manager on WhatsApp! He helped me configure the settings perfectly.\"",
+    c9:"\"Don't waste time thinking about it. Opportunities like this don't stay open for long. 10/10 service.\"",
+    c10:"\"I’ve tried so many online platforms and lost money, but this Al Qabas featured system is the real deal.\"",
+    c11:"\"Just received my second weekly payout of 2,400 KWD. Best financial decision I've made all year.\"",
+    c12:"\"Is anyone else seeing these massive returns? My account balance is growing every single hour.\"",
+    c13:"\"I was completely broke last month. Thank you so much to the creators of this incredible software!\"",
+    seeMore:"See More",
+    seeLess:"See Less",
     footer:"All rights reserved."
   },
 
@@ -105,6 +140,41 @@ const T={
     mins22:"منذ 22 دقيقة",
     c1:"\"بدأت بمبلغ 50 ديناراً كويتياً فقط، والآن أجني حرفياً آلافاً كل أسبوع! لقد ساعدني مدير حسابي عبر واتساب في إتمام عملية الإعداد خلال دقائق.\"",
     c2:"\"كنت متشككاً بشأن كسب آلاف الدولارات أسبوعياً وبشكل آلي، لكن المبلغ وصل مباشرةً إلى حسابي.\"",
+    comment3Name:"خالد س.",
+    comment4Name:"دانا ك.",
+    comment5Name:"يوسف ح.",
+    comment6Name:"آمنة ر.",
+    comment7Name:"فهد ب.",
+    comment8Name:"ليلى أ.",
+    comment9Name:"مبارك آل-",
+    comment10Name:"ريم ت.",
+    comment11Name:"عبدالرحمن ف.",
+    comment12Name:"سارة ز.",
+    comment13Name:"زيد ق.",
+    mins3:"منذ 34 دقيقة",
+    mins4:"منذ 41 دقيقة",
+    mins5:"منذ 49 دقيقة",
+    mins6:"منذ ساعة",
+    mins7:"منذ ساعة",
+    mins8:"منذ ساعتين",
+    mins9:"منذ ساعتين",
+    mins10:"منذ 3 ساعات",
+    mins11:"منذ 3 ساعات",
+    mins12:"منذ 4 ساعات",
+    mins13:"منذ 5 ساعات",
+    c3:"\"أوصي به بشدة لأي شخص يمر بظروف صعبة الآن. يستغرق إعداد التداول الآلي أقل من 5 دقائق.\"",
+    c4:"\"كنت أنا وزوجي متشككين أيضاً. بدأنا أمس ورصيدنا ارتفع بالفعل بمقدار 850 ديناراً كويتياً.\"",
+    c5:"\"أخيراً نظام يعمل فعلاً في الكويت. تأكد من مراسلتهم على واتساب قبل إغلاق التسجيل.\"",
+    c6:"\"أؤكد أن الدفعات حقيقية. وصلتني مباشرة إلى حسابي البنكي المحلي هذا الصباح دون أي رسوم مخفية.\"",
+    c7:"\"تركت وظيفتي في مجال البيع بالتجزئة الأسبوع الماضي بفضل هذا النظام. العوائد الأسبوعية تتم بالكامل دون تدخل.\"",
+    c8:"\"تحية لمدير الحساب على واتساب! ساعدني في ضبط الإعدادات بشكل مثالي.\"",
+    c9:"\"لا تضيع وقتك في التفكير في الأمر. الفرص مثل هذه لا تبقى متاحة طويلاً. خدمة 10/10.\"",
+    c10:"\"جربت العديد من المنصات عبر الإنترنت وخسرت المال، لكن هذا النظام الذي ظهر على القبس هو النظام الحقيقي.\"",
+    c11:"\"تلقيت للتو دفعة الأرباح الأسبوعية الثانية بقيمة 2,400 دينار كويتي. أفضل قرار مالي اتخذته هذا العام.\"",
+    c12:"\"هل يرى أي شخص آخر هذه العوائد الضخمة؟ رصيد حسابي ينمو كل ساعة.\"",
+    c13:"\"كنت مفلساً تماماً الشهر الماضي. شكراً جزيلاً لمنشئي هذا البرنامج الرائع!\"",
+    seeMore:"عرض المزيد",
+    seeLess:"عرض أقل",
     footer:"جميع الحقوق محفوظة."
   }
 };
@@ -221,6 +291,10 @@ function setLanguage(v){
   });
 
   populateCountries(v);
+  if(seeMoreComments){
+    const expanded=seeMoreComments.classList.contains("expanded");
+    seeMoreComments.textContent=expanded?(T[v].seeLess||"See Less"):(T[v].seeMore||"See More");
+  }
 }
 
 language.addEventListener("change",()=>{
@@ -240,6 +314,19 @@ const initialLanguage=
     :"ar";
 
 setLanguage(initialLanguage);
+
+const seeMoreComments=document.getElementById("seeMoreComments");
+if(seeMoreComments){
+  seeMoreComments.addEventListener("click",()=>{
+    const expanded=seeMoreComments.classList.toggle("expanded");
+    document.querySelectorAll(".extra-comment").forEach(el=>{
+      el.hidden=!expanded;
+    });
+    const v=language.value;
+    seeMoreComments.textContent=expanded?(T[v].seeLess||"See Less"):(T[v].seeMore||"See More");
+  });
+  document.querySelectorAll(".extra-comment").forEach(el=>{el.hidden=true;});
+}
 
 document.getElementById("contactForm").addEventListener("submit",e=>{
   e.preventDefault();
