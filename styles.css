@@ -46,3 +46,18 @@ h1{font-size:32px;letter-spacing:-.7px}
 .see-more-comments{display:block;margin:18px auto 0;border:1px solid #153b66;border-radius:9px;background:#fff;color:#153b66;padding:10px 20px;font-size:14px;font-weight:850;cursor:pointer}
 .see-more-comments:hover{background:#f3f6fa}
 .comment-avatar-placeholder{width:50px;height:50px;border-radius:50%;display:grid;place-items:center;background:#e7edf4;color:#153b66;font-weight:900;flex:0 0 50px}
+
+.comment-submit-card{margin-top:24px;padding:16px 18px;border:1px solid #dfe4ea;border-radius:12px;background:#fff;box-shadow:0 5px 18px #0d23400b}
+.comment-submit-card h4{margin:0 0 5px;color:#153b66;font-size:17px}
+.comment-submit-card>p{margin:0 0 12px;color:#68727e;font-size:13px;line-height:1.45}
+#commentForm{display:flex;gap:9px;align-items:flex-start;flex-wrap:wrap}
+#commentName,#commentText{border:1px solid #cbd2da;border-radius:8px;background:#fff;padding:10px 11px;font:inherit;font-size:14px;outline:0}
+#commentName{flex:0 0 180px}
+#commentText{flex:1 1 360px;min-height:42px;resize:vertical}
+#commentName:focus,#commentText:focus{border-color:#25854b;box-shadow:0 0 0 3px #25854b18}
+.comment-send{border:0;border-radius:8px;background:#153b66;color:#fff;padding:10px 17px;font-size:13px;font-weight:850;cursor:pointer}
+.comment-status{flex-basis:100%;margin:1px 0 0;color:#168243;font-size:12px;font-weight:750;min-height:16px}
+@media(max-width:760px){
+  #commentName,#commentText{flex:1 1 100%;width:100%}
+  .comment-send{padding:9px 16px}
+}
