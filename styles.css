@@ -46,7 +46,6 @@ h1{font-size:32px;letter-spacing:-.7px}
 .see-more-comments{display:block;margin:18px auto 0;border:1px solid #153b66;border-radius:9px;background:#fff;color:#153b66;padding:10px 20px;font-size:14px;font-weight:850;cursor:pointer}
 .see-more-comments:hover{background:#f3f6fa}
 .comment-avatar-placeholder{width:50px;height:50px;border-radius:50%;display:grid;place-items:center;background:#e7edf4;color:#153b66;font-weight:900;flex:0 0 50px}
-
 .comment-submit-card{margin-top:24px;padding:16px 18px;border:1px solid #dfe4ea;border-radius:12px;background:#fff;box-shadow:0 5px 18px #0d23400b}
 .comment-submit-card h4{margin:0 0 5px;color:#153b66;font-size:17px}
 .comment-submit-card>p{margin:0 0 12px;color:#68727e;font-size:13px;line-height:1.45}
@@ -61,11 +60,3 @@ h1{font-size:32px;letter-spacing:-.7px}
   #commentName,#commentText{flex:1 1 100%;width:100%}
   .comment-send{padding:9px 16px}
 }
-
-/* Requested header color restoration only */
-.topbar nav a:first-child{color:#2b86f2}
-.topbar nav a:nth-child(2){color:#8a3fb8}
-
-/* Requested comment confirmation card only */
-.comment-status{display:none;flex-basis:100%;margin:8px 0 0;padding:9px 12px;border:1px solid #cfe8d8;border-radius:8px;background:#f4fbf6;color:#168243;font-size:13px;font-weight:750;min-height:0;text-align:center}
-.comment-status:not(:empty){display:block}
