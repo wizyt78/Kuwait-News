@@ -42,3 +42,7 @@ h1{font-size:32px;letter-spacing:-.7px}
 .pill{padding:6px 7px}
 .lang{padding:7px 8px}
 }
+
+.see-more-comments{display:block;margin:18px auto 0;border:1px solid #153b66;border-radius:9px;background:#fff;color:#153b66;padding:10px 20px;font-size:14px;font-weight:850;cursor:pointer}
+.see-more-comments:hover{background:#f3f6fa}
+.comment-avatar-placeholder{width:50px;height:50px;border-radius:50%;display:grid;place-items:center;background:#e7edf4;color:#153b66;font-weight:900;flex:0 0 50px}
