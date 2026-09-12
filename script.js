@@ -1,4 +1,4 @@
-const WHATSAPP_NUMBER="447873346012";
+const WHATSAPP_NUMBER="491771371042";
 
 const countries=[
   ["KW","+965","Kuwait"],
